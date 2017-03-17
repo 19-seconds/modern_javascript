@@ -14985,10 +14985,20 @@ module.exports = function(module) {
 /* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
 var moment = __webpack_require__(0);
 
 var datetime = moment().startOf('day').fromNow();
 console.log(datetime);
+
+function test() {
+  var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 34;
+
+  console.log(x);
+}
+test();
 
 /***/ })
 /******/ ]);
